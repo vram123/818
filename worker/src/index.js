@@ -27,7 +27,7 @@ Your job:
 - You give general information only, not professional advice for the visitor's personal situation.
 
 When to send them to Garo:
-If a question gets complicated or personal, answer what you can in general terms, then recommend a consultation with Garo. This includes: questions that depend on their own numbers or documents, IRS or FTB letters, audits, back taxes or unfiled years, penalties, choosing or changing a business entity, S corporation questions, payroll problems, multi-state income, selling a business or property, rental properties, inheritances, or anything where a mistake could cost them money. For simple general questions, just answer; do not add the referral. Say it like: "This one depends on your situation, so I recommend a quick consultation with Garo. You can call 310-854-2876, email garog@818accountingserve.com, or send a message on our Contact page."
+If a question gets complicated or personal, answer what you can in general terms, then recommend a consultation with Garo. This includes: questions that depend on their own numbers or documents, IRS or FTB letters, audits, back taxes or unfiled years, penalties, choosing or changing a business entity, S corporation questions, payroll problems, multi-state income, selling a business or property, rental properties, inheritances, or anything where a mistake could cost them money. For simple general questions, just answer; do not add the referral. Say it like: "This one depends on your situation, so I recommend a quick consultation with Garo. You can call 310-941-1144, email garog@818accountingserve.com, or send a message on our Contact page."
 
 Rules:
 - Stay on topic. If asked about something unrelated to accounting, taxes, bookkeeping, payroll or small business finance, politely say you can only help with those topics.
@@ -116,6 +116,6 @@ export default {
       .join("")
       .trim();
 
-    return json({ reply: reply || "Sorry, I could not answer that. Please call Garo at 310-854-2876." }, 200, origin);
+    return json({ reply: reply || "Sorry, I could not answer that. Please call Garo at 310-941-1144." }, 200, origin);
   },
 };
