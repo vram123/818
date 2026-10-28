@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Consultation | 818 Accounting Serve</title>
+  <meta name="description" content="Answer a few quick questions and Garo will reach out about your free tax consultation.">
+  <link rel="icon" href="../src/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Caveat+Brush&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="topbar">
+        <span>Trusted accounting and tax services for 20 years</span>
+        <div class="contact">
+          <a href="tel:+13108542876">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            310-854-2876
+          </a>
+          <a href="mailto:garog@818accountingserve.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            garog@818accountingserve.com
+          </a>
+        </div>
+      </div>
+      <div class="navbar">
+        <a class="logo" href="../index.html">
+          <img src="../src/img/logo.svg" alt="">
+          Accounting Serve
+        </a>
+        <nav class="menu">
+          <a href="services.html">Services</a>
+          <a href="why-us.html">Why Us</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="tax-guide.html">Tax Guide</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="pill" href="contact.html">Get Started</a>
+      </div>
+    </header>
+
+    <!-- Free consultation questionnaire (logic in src/js/consultation.js) -->
+    <section class="section page-top">
+      <div class="quiz">
+        <div class="quiz-top">
+          <div class="eyebrow">Free Consultation</div>
+          <div class="quiz-count" id="quiz-count" aria-live="polite">Question 1 of 7</div>
+        </div>
+        <div class="quiz-progress" aria-hidden="true"><span id="quiz-bar"></span></div>
+
+        <form id="quiz-form" novalidate>
+
+          <fieldset class="step is-active" data-step="filing">
+            <legend><h1>Let's get to know your taxes</h1></legend>
+            <p class="step-lead">A few quick questions so Garo can come prepared. First, how do you file?</p>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="filing" value="Single"><span>Single</span></label>
+              <label class="choice"><input type="radio" name="filing" value="Married filing jointly"><span>Married filing jointly</span></label>
+              <label class="choice"><input type="radio" name="filing" value="Head of household"><span>Head of household</span></label>
+              <label class="choice"><input type="radio" name="filing" value="Not sure"><span>Not sure</span></label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="work">
+            <legend><h2>How do you earn your income?</h2></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="work" value="Employee"><span>Employee<small>I get a W-2</small></span></label>
+              <label class="choice"><input type="radio" name="work" value="Business owner"><span>Business owner<small>Self-employed, freelance or 1099</small></span></label>
+              <label class="choice"><input type="radio" name="work" value="Both"><span>Both<small>A job plus a business or side gig</small></span></label>
+              <label class="choice"><input type="radio" name="work" value="Retired or other"><span>Retired or other<small>Pension, Social Security, investments</small></span></label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="business" data-if-work="Business owner|Both">
+            <legend><h2>How is your business set up?</h2></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="business" value="Sole proprietor"><span>Sole proprietor</span></label>
+              <label class="choice"><input type="radio" name="business" value="LLC"><span>LLC</span></label>
+              <label class="choice"><input type="radio" name="business" value="S corporation"><span>S corporation</span></label>
+              <label class="choice"><input type="radio" name="business" value="Partnership or C corporation"><span>Partnership or C corporation</span></label>
+              <label class="choice"><input type="radio" name="business" value="Not sure"><span>Not sure</span></label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="income">
+            <legend><h2>Roughly what is your yearly household income?</h2></legend>
+            <p class="step-lead">Slide to your best guess. It does not need to be exact.</p>
+            <output class="income-value" id="income-value" for="income">$75,000</output>
+            <input class="slider" type="range" id="income" name="income" min="0" max="500000" step="5000" value="75000" aria-label="Yearly household income">
+            <div class="slider-scale" aria-hidden="true"><span>$0</span><span>$250k</span><span>$500k+</span></div>
+            <div class="estimate">
+              <div><small>Estimated federal income tax</small><strong id="est-tax">$0</strong></div>
+              <div><small>Top tax bracket</small><strong id="est-bracket">0%</strong></div>
+              <div><small>Effective rate</small><strong id="est-rate">0%</strong></div>
+            </div>
+            <p class="estimate-note" id="est-note">Rough estimate using the 2026 standard deduction, before credits. California tax is not included.</p>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="help">
+            <legend><h2>What can Garo help you with?</h2></legend>
+            <p class="step-lead">Pick all that apply.</p>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="help" value="Tax preparation"><span>Tax preparation</span></label>
+              <label class="choice"><input type="checkbox" name="help" value="Tax planning"><span>Lowering next year's taxes</span></label>
+              <label class="choice"><input type="checkbox" name="help" value="Bookkeeping"><span>Bookkeeping</span></label>
+              <label class="choice"><input type="checkbox" name="help" value="Payroll"><span>Payroll</span></label>
+              <label class="choice"><input type="checkbox" name="help" value="IRS or FTB letter"><span>An IRS or FTB letter</span></label>
+              <label class="choice"><input type="checkbox" name="help" value="Something else"><span>Something else</span></label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="plans">
+            <legend><h2>Any big plans in the next year?</h2></legend>
+            <p class="step-lead">Big life changes often mean tax savings. Pick all that apply.</p>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="plans" value="Buying a home"><span>Buying a home</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="Starting or growing a business"><span>Starting or growing a business</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="Buying a vehicle or equipment for work"><span>Buying a vehicle or equipment for work</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="Saving for retirement"><span>Saving for retirement</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="Getting married or having a child"><span>Getting married or having a child</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="Selling property or investments"><span>Selling property or investments</span></label>
+              <label class="choice"><input type="checkbox" name="plans" value="None of these" data-exclusive><span>None of these</span></label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="button" data-next>Next <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="contact">
+            <legend><h2>Where can Garo reach you?</h2></legend>
+            <p class="step-lead">Garo will follow up within one business day.</p>
+            <div class="form">
+              <label>Name
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+              <label>Email
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label>Phone <span class="optional">(optional)</span>
+                <input type="tel" name="phone" autocomplete="tel">
+              </label>
+              <label>Anything else Garo should know? <span class="optional">(optional)</span>
+                <textarea name="notes"></textarea>
+              </label>
+            </div>
+            <div class="step-actions"><button class="btn primary" type="submit">Send to Garo <span aria-hidden="true">&rarr;</span></button></div>
+          </fieldset>
+
+          <div class="step" data-step="done" tabindex="-1">
+            <h2>Almost done!</h2>
+            <div class="script">thank you</div>
+            <p class="step-lead">Your email app should now be open with your answers filled in. Press <strong>send</strong> so they reach Garo.</p>
+            <p class="step-lead">Nothing opened? Email <a href="mailto:garog@818accountingserve.com">garog@818accountingserve.com</a> or call <a href="tel:+13108542876">310-854-2876</a>.</p>
+            <div class="step-actions"><a class="btn" href="../index.html">Back to Home</a></div>
+          </div>
+
+          <p class="quiz-error" id="quiz-error" aria-live="polite"></p>
+          <button class="quiz-back" type="button" id="quiz-back" hidden><span aria-hidden="true">&larr;</span> Back</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div class="wrap">
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="../index.html">
+            <img src="../src/img/logo.svg" alt="">
+            Accounting Serve
+          </a>
+          <p>We are a trusted partner in accounting for 20 years.</p>
+          <div class="social">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+13108542876">310-854-2876</a></li>
+            <li><a href="mailto:garog@818accountingserve.com">garog@818accountingserve.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="why-us.html">Why Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="tax-guide.html">Tax Guide</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Our Newsletter</h4>
+          <p>Tax tips and deadline reminders, straight to your inbox.</p>
+          <form class="newsletter" id="newsletter-form">
+            <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
+            <button class="pill" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> 818 Accounting Serve. All rights reserved.</span>
+        <nav>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/chat.js"></script>
+  <script src="../src/js/consultation.js"></script>
+</body>
+</html>
