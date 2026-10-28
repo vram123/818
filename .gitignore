@@ -1,0 +1,24 @@
+# Environment and secrets (GitHub Pages publishes every committed file)
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs and local tooling
+*.log
+node_modules/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Cloudflare Worker local secrets and build output
+.dev.vars
+.wrangler/
