@@ -26,7 +26,7 @@ Static marketing site for 818 Accounting Serve (818accountingserve.com). Plain H
 
 ## Content rules
 
-- Contact details: phone 310-854-2876 (`tel:+13108542876`), email garog@818accountingserve.com. The email also appears as `CONTACT_EMAIL` in `main.js`.
+- Contact details: phone 310-941-1144 (`tel:+13109411144`), email garog@818accountingserve.com. The email also appears as `CONTACT_EMAIL` in `main.js`.
 - No em dashes anywhere in site copy.
 - Testimonials (`index.html` and `pages/reviews.html`, kept identical): the first two quotes were supplied by the user. Each card shows the client's name (only Jason, given by the user) or client type, with the service they used underneath; the third card's quote is still a placeholder. Use only review text the user provides from real clients; never invent reviews or client names.
 - The Instagram and LinkedIn links still point to the generic sites, and `tax-guide.html` has a placeholder comment for Garo's credentials. Do not make up profile URLs or credentials.

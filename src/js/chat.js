@@ -9,7 +9,7 @@ var CHAT_API_URL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname)
 (function () {
   var history = [];
   var GREETING = "Hi, I'm Taxo! I can answer general accounting, tax and small business questions. What can I help you with?";
-  var FALLBACK = "Sorry, Taxo is unavailable right now. Please call Garo at 310-854-2876 or email garog@818accountingserve.com.";
+  var FALLBACK = "Sorry, Taxo is unavailable right now. Please call Garo at 310-941-1144 or email garog@818accountingserve.com.";
 
   var root = document.createElement("div");
   root.className = "chat";
@@ -33,7 +33,7 @@ var CHAT_API_URL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname)
         '<input type="text" name="q" placeholder="Type your question" aria-label="Your question" autocomplete="off" maxlength="2000" required>' +
         '<button class="pill" type="submit">Send</button>' +
       '</form>' +
-      '<p class="chat-note">General information only, not tax advice. For your situation, call Garo at <a href="tel:+13108542876">310-854-2876</a>.</p>' +
+      '<p class="chat-note">General information only, not tax advice. For your situation, call Garo at <a href="tel:+13109411144">310-941-1144</a>.</p>' +
     '</section>';
   document.body.appendChild(root);
 
